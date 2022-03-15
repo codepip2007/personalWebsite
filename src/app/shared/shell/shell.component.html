@@ -10,6 +10,7 @@
       <a mat-list-item routerLink="/login" (click)="drawer.close()">Login</a>
       <a mat-list-item routerLink="/projects" (click)="drawer.close()">Projects</a>
       <a mat-list-item routerLink="/discord" (click)="drawer.close()">Discord</a>
+      <a mat-list-item routerLink="/privacypolicy" (click)="drawer.close()">Privacy Policy</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -30,10 +31,10 @@
       <div *ngIf="!(isHandset$ | async)">
         <a mat-button routerLink="/projects">Projects</a>
         <a mat-button routerLink="/discord">Discord</a>
+        <a mat-button routerLink="/privacypolicy">Privacy Policy</a>
 
-        <a mat-button routerLink="/login" *ngIf="!(afAuth.authState | async)">🔑 Login</a>
+        <a mat-button routerLink="/login" *ngIf="!(afAuth.authState | async)">Login</a>
         <a mat-button routerLink="/login" *ngIf="afAuth.authState | async as user" >
-          <img class="avatar" [src]="user.photoURL || 'assets/default-user.svg'">
           Profile
         </a>
 

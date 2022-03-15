@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DiscordComponent } from './discord/discord.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'discord', component: DiscordComponent
+  },
+  {
+    path: 'privacypolicy', component: PrivacyPolicyComponent
   }
 ];
 
