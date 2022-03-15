@@ -1,0 +1,13 @@
+<h1 style="text-align: center; margin-top: 10px;">Github Repositories</h1>
+<!-- <button mat-raised-button (click)="search()" disabled="{{ disabled }}" style="margin-left: 10px;">Show Github Repositories</button> -->
+<br>
+
+<div *ngFor="let repo of repos">
+<mat-card class="repos">
+    <mat-card-title>{{ repo.name }}</mat-card-title>
+    <mat-card-subtitle>{{ repo.description }}</mat-card-subtitle>
+    <mat-card-content><a href="{{ repo.html_url }}" style="color: #67aaf9">View on Github</a></mat-card-content>
+    <mat-card-footer style="margin-left: 0px;">{{ repo.watchers_count }} Stars | {{ repo.forks_count }} Forks</mat-card-footer>
+</mat-card>
+<br>
+</div>
