@@ -12,6 +12,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from '@angular/cdk/layout';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     RouterModule,
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

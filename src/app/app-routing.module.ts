@@ -4,13 +4,14 @@ import { DiscordComponent } from './discord/discord.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { LoginPageComponent } from './user/login-page/login-page.component';
 
 const routes: Routes = [
   {
     path: '', component: HomePageComponent
   },
   {
-    path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule)
+    path: 'login', component: LoginPageComponent
   },
   {
     path: 'projects', component: ProjectsComponent

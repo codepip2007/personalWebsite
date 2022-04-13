@@ -1,1 +1,10 @@
-{}
+{
+  "hosting": {
+    "public": "dist/personalwebsite",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
