@@ -7,7 +7,7 @@
     <mat-nav-list>
      
       <a mat-list-item routerLink="/" (click)="drawer.close()">Home</a>
-      <a mat-list-item routerLink="/login" (click)="drawer.close()">Login</a>
+      <!-- <a mat-list-item routerLink="/login" (click)="drawer.close()">Login</a> -->
       <a mat-list-item routerLink="/projects" (click)="drawer.close()">Projects</a>
       <a mat-list-item routerLink="/discord" (click)="drawer.close()">Discord</a>
       <a mat-list-item routerLink="/privacypolicy" (click)="drawer.close()">Privacy Policy</a>
@@ -32,11 +32,11 @@
         <a mat-button routerLink="/projects">Projects</a>
         <a mat-button routerLink="/discord">Discord</a>
         <a mat-button routerLink="/privacypolicy">Privacy Policy</a>
-
+<!-- 
         <a mat-button routerLink="/login" *ngIf="!(afAuth.authState | async)">Login</a>
         <a mat-button routerLink="/login" *ngIf="afAuth.authState | async as user" >
           Profile
-        </a>
+        </a> -->
 
       </div>
     </mat-toolbar>

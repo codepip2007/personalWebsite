@@ -14,6 +14,7 @@ export class ProjectsComponent implements OnInit {
   
   repos: any;
   disabled: boolean;
+  repocount: any;
   constructor(public git: GithubService) { }
 
   search() {
@@ -24,10 +25,17 @@ export class ProjectsComponent implements OnInit {
     this.disabled = true;
   }
 
+  getRepoCount() {
+    this.git.getRepoCount().subscribe(r => {
+      this.repocount = r
+    })
+  }
+
   ngOnInit() {
     this.disabled = false;
 
     this.search()
+    this.getRepoCount()
   }
   
   

@@ -12,4 +12,8 @@ export class GithubService {
   getRepo() {
     return this.http.get('https://api.github.com/users/codepip2007/repos')
   }
+
+  getRepoCount() {
+    return this.http.get('https://api.github.com/users/codepip2007')
+  }
 }
